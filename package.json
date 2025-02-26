@@ -1,0 +1,33 @@
+{
+  "name": "flo-sim-ui",
+  "version": "1.0.0",
+  "description": "floSIM",
+  "author": "Oren",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development GIT_TAG=`git describe --tags --abbrev=0` nodemon server/index.js --watch server",
+    "build": "nuxt build",
+    "start": "cross-env NODE_ENV=production node server/index.js",
+    "dstart": "cross-env NODE_ENV=dstart node server/index.js",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/auth-next": "^5.0.0-1611574754.9020f2a",
+    "@nuxtjs/axios": "^5.13.6",
+    "cross-env": "^7.0.3",
+    "d3": "^7.9.0",
+    "express": "^4.21.2",
+    "fs": "0.0.1-security",
+    "jsonwebtoken": "^9.0.2",
+    "nuxt": "^2.17.2",
+    "v-jsoneditor": "^1.4.5",
+    "vue-ctk-date-time-picker": "^2.5.0",
+    "vuetify": "^2.7.1"
+  },
+  "devDependencies": {
+    "@nuxtjs/vuetify": "^1.12.3",
+    "eslint": "^9.18.0",
+    "eslint-plugin-vue": "^9.32.0",
+    "nodemon": "^3.1.9"
+  }
+}
